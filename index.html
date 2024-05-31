@@ -22,27 +22,6 @@
     </style>
   </head>
 
-  <script>
-    function navigateWithHeader() {
-        const ngrokUrl = 'https://glowworm-big-finally.ngrok-free.app';
-
-        fetch(ngrokUrl, {
-            method: 'GET',
-            headers: {
-                'ngrok-skip-browser-warning': 'true'
-            }
-        })
-        .then(response => {
-            if (response.ok) {
-                window.location.href = ngrokUrl;
-            } else {
-                console.error('Failed to fetch the URL with custom header.');
-            }
-        })
-        .catch(error => console.error('Error:', error));
-    }
-  </script>
-
   <body>
     <div id="message">
 	  <h1>Sorry!</h1>
@@ -54,9 +33,7 @@
     and it is not listed among the buttons below, let me know and I will try to help you!</p>
 	  <p><br>-Erik</p>
 
-    <center><button onclick="navigateWithHeader()">Magic Media Downloader</button></center></div>
-
-    
+    <a href="https://glowworm-big-finally.ngrok-free.app">Magic Media Downloader</a>    
 	  
     </div>
     
